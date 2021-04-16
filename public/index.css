@@ -1,0 +1,243 @@
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Raleway", sans-serif;
+  color: #666;
+}
+* {
+  margin: 0;
+}
+p {
+  margin: 0 0 5px;
+}
+h1 {
+  margin: 20px 0;
+  font-weight: 700;
+  color: #444;
+}
+h1,
+h3 {
+  text-transform: uppercase;
+}
+h3 {
+  border-bottom: #666 1px solid;
+  margin: 30px 0 20px;
+  font-weight: 600;
+}
+.xs-visible {
+  display: none;
+}
+section.main-wrap {
+  max-width: 800px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 0 20px;
+  border: #666 solid 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  position: relative;
+  padding: 15px 20px;
+  margin: 0 -20px;
+  border-bottom: 1px solid #eee;
+  flex: 1 1 100%;
+  background: #fffdaf;
+  border-image: url(./img/wave-border-line.png) 20 round;
+  -webkit-border-image: url(./img/wave-border-line.png) 20 round;
+  -moz-border-image: url(./img/wave-border-line.png) 20 round;
+  -o-border-image: url(./img/wave-border-line.png) 20 round;
+  border-image-width: 0 0 3px 0;
+
+  -webkit-border-image-width: 0 0 8px 0;
+  -moz-border-image-width: 0 0 8px 0;
+  -o-border-image-width: 0 0 8px 0;
+}
+header a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 14px;
+  line-height: 2;
+  margin-right: 10px;
+  white-space: nowrap;
+  display: inline-block;
+
+}
+header a img {
+  width: 12px;
+  height: 100%;
+}
+header a:focus,
+header a:active,
+header a:hover {
+  color: #e56a76;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+.img-wrap {
+  background: url(./img/avatar.png) center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  float: right;
+  margin-right: 10px;
+}
+.img-wrap img {
+  width: 100%;
+}
+main {
+  width: 70%;
+  max-width: calc(100% - 255px);
+  vertical-align: top;
+}
+aside {
+  vertical-align: top;
+  width: calc(30% - 40px);
+  min-width: 220px;
+  padding-right: 20px;
+  margin-right: 15px;
+  border-left: none;
+  background: linear-gradient(
+    -90deg
+    , #f9f9f9, #fff);;
+}
+aside .languages {
+  padding-left: 0px;
+}
+aside .languages li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.4;
+}
+aside .languages .rating {
+  display: flex;
+  align-items: center;
+}
+aside .languages .native {
+  color: #4dc84d;
+  font-size: 10px;
+}
+aside .languages .full {
+  width: 15px;
+  height: 5px;
+  margin-left: 5px;
+  background: #666;
+}
+aside .languages .full.half {
+  opacity: 0.5;
+}
+aside .languages .full.empty {
+  opacity: 0.2;
+}
+.section-subheading {
+  color: #474eac;
+  margin-top: 15px;
+}
+.exp .with-icon-container {
+  display: flex;
+  justify-content: space-between;
+}
+.exp .period img {
+  width: 15px;
+}
+.exp .item-workplace {
+  color: #e56a76;
+  font-size: 16px;
+}
+.exp .editable-field-xs {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+}
+.exp .inner {
+  margin-bottom: 20px;
+}
+.exp .item-description {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.ed strong {
+  font-size: 16px;
+}
+.ed li a {
+  margin-left: 5px;
+  display: inline-block;
+  color: #e56a76;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.ed li a:hover {
+  transform: scale(1.05);
+}
+.exp .section-subheading {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin: 0px 0 3px;
+}
+.exp .section-subheading + p {
+  font-size: 14px;
+}
+.exp .section-subheading span {
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  section.main-wrap {
+    margin: 0;
+  }
+  .img-wrap {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    float: right;
+  }
+  aside .languages li {
+    line-height: 1.6;
+  }
+  aside .languages .native {
+    font-size: 12px;
+  }
+  aside .languages .full {
+    width: 20px;
+  }
+  .xs-visible {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+  aside {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    background: none;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+  aside h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  aside ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  aside  h3 img {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in;
+  }
+  aside section.open h3 img {
+    transform: rotate(180deg);
+  }
+  aside section.open ul {
+    max-height: 400px;
+    transition: max-height 0.3s ease-in;
+  }
+}
