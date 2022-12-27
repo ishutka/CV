@@ -241,3 +241,16 @@ aside .languages .full.empty {
     transition: max-height 0.3s ease-in;
   }
 }
+
+#experience {
+  display: inline-block;
+  min-width: 0px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#experience.activated {
+  opacity: 1;
+  min-width: 18px;
+}
